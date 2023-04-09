@@ -1,17 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace ATMTuto
 {
     public partial class Balance : Form
     {
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\tkzc\Documents\ATMDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void getBalance()
+        {
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("select Balance from AccountTb1 where AccNum = '" + labAccNum.Text + "'", conn);
+                DataTable dataTable = new DataTable();
+                sda.Fill(dataTable);
+                labBalance.Text = "￥ " + dataTable.Rows[0][0].ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("查询数据库失败！！！提示：" + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
         public Balance()
         {
             InitializeComponent();
@@ -27,6 +44,7 @@ namespace ATMTuto
         private void Balance_Load(object sender, EventArgs e)
         {
             labAccNum.Text = Login.AccountNumber;
+            getBalance();
         }
     }
 }
