@@ -63,5 +63,10 @@ namespace ATMTuto
         {
             labAccNum.Text = "账号：" + Login.AccountNumber;
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -55,5 +55,10 @@ namespace ATMTuto
             this.Hide();
             login.Show();
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

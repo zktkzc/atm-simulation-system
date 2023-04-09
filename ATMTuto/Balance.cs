@@ -46,5 +46,10 @@ namespace ATMTuto
             labAccNum.Text = Login.AccountNumber;
             getBalance();
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

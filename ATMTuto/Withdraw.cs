@@ -90,6 +90,11 @@ namespace ATMTuto
             }
         }
 
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void getBalance()
         {
             try
