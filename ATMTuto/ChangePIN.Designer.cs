@@ -37,10 +37,10 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
+            this.labBack = new System.Windows.Forms.Label();
+            this.texPin1 = new System.Windows.Forms.TextBox();
+            this.texPin2 = new System.Windows.Forms.TextBox();
+            this.btnOk = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +64,7 @@
             this.guna2ControlBox1.Location = new System.Drawing.Point(791, 3);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 3;
+            this.guna2ControlBox1.TabIndex = 0;
             // 
             // label2
             // 
@@ -141,62 +141,68 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "新密码：";
             // 
-            // label23
+            // labBack
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.label23.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label23.Location = new System.Drawing.Point(352, 483);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(126, 27);
-            this.label23.TabIndex = 16;
-            this.label23.Text = "退出 Logout";
+            this.labBack.AutoSize = true;
+            this.labBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labBack.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.labBack.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.labBack.Location = new System.Drawing.Point(352, 483);
+            this.labBack.Name = "labBack";
+            this.labBack.Size = new System.Drawing.Size(103, 27);
+            this.labBack.TabIndex = 3;
+            this.labBack.Text = "返回 Back";
+            this.labBack.Click += new System.EventHandler(this.labBack_Click);
             // 
-            // textBox1
+            // texPin1
             // 
-            this.textBox1.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox1.Location = new System.Drawing.Point(368, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(251, 34);
-            this.textBox1.TabIndex = 17;
+            this.texPin1.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texPin1.Location = new System.Drawing.Point(368, 194);
+            this.texPin1.Name = "texPin1";
+            this.texPin1.Size = new System.Drawing.Size(251, 34);
+            this.texPin1.TabIndex = 0;
             // 
-            // textBox2
+            // texPin2
             // 
-            this.textBox2.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox2.Location = new System.Drawing.Point(365, 294);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(251, 34);
-            this.textBox2.TabIndex = 17;
+            this.texPin2.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texPin2.Location = new System.Drawing.Point(365, 294);
+            this.texPin2.Name = "texPin2";
+            this.texPin2.Size = new System.Drawing.Size(251, 34);
+            this.texPin2.TabIndex = 1;
             // 
-            // btnSubmit
+            // btnOk
             // 
-            this.btnSubmit.AutoRoundedCorners = true;
-            this.btnSubmit.BorderColor = System.Drawing.Color.Transparent;
-            this.btnSubmit.BorderRadius = 21;
-            this.btnSubmit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSubmit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSubmit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSubmit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSubmit.FillColor = System.Drawing.Color.DarkSlateGray;
-            this.btnSubmit.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.HoverState.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.btnSubmit.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btnSubmit.Location = new System.Drawing.Point(268, 396);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(298, 45);
-            this.btnSubmit.TabIndex = 18;
-            this.btnSubmit.Text = "登录 Login";
+            this.btnOk.AutoRoundedCorners = true;
+            this.btnOk.BorderColor = System.Drawing.Color.Transparent;
+            this.btnOk.BorderRadius = 21;
+            this.btnOk.BorderThickness = 3;
+            this.btnOk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOk.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOk.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOk.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOk.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.btnOk.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.btnOk.ForeColor = System.Drawing.Color.White;
+            this.btnOk.HoverState.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.btnOk.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnOk.HoverState.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.btnOk.Location = new System.Drawing.Point(268, 396);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(298, 45);
+            this.btnOk.TabIndex = 2;
+            this.btnOk.Text = "确定 OK";
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // ChangePIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 571);
-            this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label23);
+            this.Controls.Add(this.btnOk);
+            this.Controls.Add(this.texPin2);
+            this.Controls.Add(this.texPin1);
+            this.Controls.Add(this.labBack);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label4);
@@ -205,7 +211,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChangePIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChangePIN";
@@ -227,9 +233,9 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private Guna.UI2.WinForms.Guna2Button btnSubmit;
+        private System.Windows.Forms.Label labBack;
+        private System.Windows.Forms.TextBox texPin1;
+        private System.Windows.Forms.TextBox texPin2;
+        private Guna.UI2.WinForms.Guna2Button btnOk;
     }
 }
