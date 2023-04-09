@@ -36,9 +36,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.labAccNum = new System.Windows.Forms.Label();
+            this.labBalance = new System.Windows.Forms.Label();
+            this.labBack = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -131,38 +131,40 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Balance";
             // 
-            // label6
+            // labAccNum
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 20F);
-            this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label6.Location = new System.Drawing.Point(407, 181);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 35);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "ACCNUM";
+            this.labAccNum.AutoSize = true;
+            this.labAccNum.Font = new System.Drawing.Font("微软雅黑", 20F);
+            this.labAccNum.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.labAccNum.Location = new System.Drawing.Point(407, 181);
+            this.labAccNum.Name = "labAccNum";
+            this.labAccNum.Size = new System.Drawing.Size(138, 35);
+            this.labAccNum.TabIndex = 4;
+            this.labAccNum.Text = "ACCNUM";
             // 
-            // label7
+            // labBalance
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("微软雅黑", 20F);
-            this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label7.Location = new System.Drawing.Point(407, 313);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 35);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "BALANCE";
+            this.labBalance.AutoSize = true;
+            this.labBalance.Font = new System.Drawing.Font("微软雅黑", 20F);
+            this.labBalance.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.labBalance.Location = new System.Drawing.Point(407, 313);
+            this.labBalance.Name = "labBalance";
+            this.labBalance.Size = new System.Drawing.Size(139, 35);
+            this.labBalance.TabIndex = 4;
+            this.labBalance.Text = "BALANCE";
             // 
-            // label23
+            // labBack
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.label23.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label23.Location = new System.Drawing.Point(324, 446);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(126, 27);
-            this.label23.TabIndex = 9;
-            this.label23.Text = "退出 Logout";
+            this.labBack.AutoSize = true;
+            this.labBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labBack.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.labBack.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.labBack.Location = new System.Drawing.Point(324, 446);
+            this.labBack.Name = "labBack";
+            this.labBack.Size = new System.Drawing.Size(103, 27);
+            this.labBack.TabIndex = 9;
+            this.labBack.Text = "返回 Back";
+            this.labBack.Click += new System.EventHandler(this.labBack_Click);
             // 
             // guna2Panel2
             // 
@@ -179,20 +181,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 528);
             this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.label23);
+            this.Controls.Add(this.labBack);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labBalance);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.labAccNum);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Balance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Balance";
+            this.Load += new System.EventHandler(this.Balance_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -210,9 +213,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label labAccNum;
+        private System.Windows.Forms.Label labBalance;
+        private System.Windows.Forms.Label labBack;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

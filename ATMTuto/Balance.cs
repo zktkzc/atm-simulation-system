@@ -16,5 +16,17 @@ namespace ATMTuto
         {
             InitializeComponent();
         }
+
+        private void labBack_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            this.Hide();
+            home.Show();
+        }
+
+        private void Balance_Load(object sender, EventArgs e)
+        {
+            labAccNum.Text = Login.AccountNumber;
+        }
     }
 }
