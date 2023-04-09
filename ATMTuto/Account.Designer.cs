@@ -59,13 +59,13 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label23 = new System.Windows.Forms.Label();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -384,14 +384,6 @@
             this.textBox5.Size = new System.Drawing.Size(251, 34);
             this.textBox5.TabIndex = 4;
             // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox7.Location = new System.Drawing.Point(685, 525);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(251, 34);
-            this.textBox7.TabIndex = 4;
-            // 
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("微软雅黑", 15F);
@@ -457,17 +449,36 @@
             this.label23.TabIndex = 8;
             this.label23.Text = "退出 Logout";
             // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "非本科生<Non Graduate>",
+            "本科生<Under Graduate>",
+            "研究生<Post Graduate>"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(685, 525);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(251, 36);
+            this.guna2ComboBox1.TabIndex = 9;
+            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 821);
+            this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -542,12 +553,12 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label23;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
     }
 }
