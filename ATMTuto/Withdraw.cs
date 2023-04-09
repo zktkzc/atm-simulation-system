@@ -21,6 +21,23 @@ namespace ATMTuto
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\tkzc\Documents\ATMDb.mdf;Integrated Security=True;Connect Timeout=30");
         int oldBalance, newBalance;
 
+        private void addTransaction()
+        {
+            string trType = "取款";
+            try
+            {
+                conn.Open();
+                string qurey = "insert into TransactionTb1 values('" + Login.AccountNumber + "', '" + trType + "', '" + texAccount.Text.Trim() + "', '" + DateTime.Today.Date.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(qurey, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("连接数据库时发生错误！！！提示：" + ex.Message);
+            }
+            finally { conn.Close(); }
+        }
+
         private void labBack_Click(object sender, EventArgs e)
         {
             Home home = new Home();
@@ -58,6 +75,8 @@ namespace ATMTuto
                         SqlCommand cmd = new SqlCommand(qurey, conn);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("取款交易成功！账户成功取出" + newBalance + "元");
+                        conn.Close();
+                        addTransaction();
                         Home home = new Home();
                         this.Hide();
                         home.Show();

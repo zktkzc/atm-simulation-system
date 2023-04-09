@@ -98,6 +98,22 @@ namespace ATMTuto
                     SqlCommand cmd = new SqlCommand(qurey, conn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("取款交易成功！账户成功取出" + newBalance + "元");
+                    conn.Close();
+
+                    string trType = "快速取款";
+                    try
+                    {
+                        conn.Open();
+                        qurey = "insert into TransactionTb1 values('" + Login.AccountNumber + "', '" + trType + "', '" + newBalance + "', '" + DateTime.Today.Date.ToString() + "')";
+                        cmd = new SqlCommand(qurey, conn);
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("连接数据库时发生错误！！！提示：" + ex.Message);
+                    }
+                    finally { conn.Close(); }
+
                     Home home = new Home();
                     this.Hide();
                     home.Show();
