@@ -46,14 +46,22 @@ namespace ATMTuto
                 {
                     conn.Open();
                     newBalance = Convert.ToInt32(texAccount.Text.Trim());
-                    int balance = oldBalance - newBalance;
-                    string qurey = "update AccountTb1 set Balance = " + balance + " where AccNum = " + Login.AccountNumber;
-                    SqlCommand cmd = new SqlCommand(qurey, conn);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("取款交易成功！账户成功取出" + newBalance + "元");
-                    Home home = new Home();
-                    this.Hide();
-                    home.Show();
+                    if (newBalance > oldBalance)
+                    {
+                        MessageBox.Show("账户余额不足，请重新输入！！！");
+                        texAccount.Clear();
+                    }
+                    else
+                    {
+                        int balance = oldBalance - newBalance;
+                        string qurey = "update AccountTb1 set Balance = " + balance + " where AccNum = " + Login.AccountNumber;
+                        SqlCommand cmd = new SqlCommand(qurey, conn);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("取款交易成功！账户成功取出" + newBalance + "元");
+                        Home home = new Home();
+                        this.Hide();
+                        home.Show();
+                    }
                 }
                 catch (Exception ex)
                 {
