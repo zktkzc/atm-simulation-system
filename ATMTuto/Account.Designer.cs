@@ -54,18 +54,18 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.texAccountNum = new System.Windows.Forms.TextBox();
+            this.texPin = new System.Windows.Forms.TextBox();
+            this.texName = new System.Windows.Forms.TextBox();
+            this.texLaName = new System.Windows.Forms.TextBox();
+            this.texAddr = new System.Windows.Forms.TextBox();
+            this.texOccupation = new System.Windows.Forms.TextBox();
+            this.texPhone = new System.Windows.Forms.TextBox();
+            this.DobDate = new System.Windows.Forms.DateTimePicker();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.labLogout = new System.Windows.Forms.Label();
+            this.cbEducation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -344,76 +344,77 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // texAccountNum
             // 
-            this.textBox1.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox1.Location = new System.Drawing.Point(248, 176);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(251, 34);
-            this.textBox1.TabIndex = 4;
+            this.texAccountNum.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texAccountNum.Location = new System.Drawing.Point(248, 176);
+            this.texAccountNum.Name = "texAccountNum";
+            this.texAccountNum.Size = new System.Drawing.Size(251, 34);
+            this.texAccountNum.TabIndex = 0;
             // 
-            // textBox2
+            // texPin
             // 
-            this.textBox2.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox2.Location = new System.Drawing.Point(248, 254);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(251, 34);
-            this.textBox2.TabIndex = 4;
+            this.texPin.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texPin.Location = new System.Drawing.Point(248, 254);
+            this.texPin.Name = "texPin";
+            this.texPin.Size = new System.Drawing.Size(251, 34);
+            this.texPin.TabIndex = 1;
             // 
-            // textBox3
+            // texName
             // 
-            this.textBox3.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox3.Location = new System.Drawing.Point(248, 334);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(251, 34);
-            this.textBox3.TabIndex = 4;
+            this.texName.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texName.Location = new System.Drawing.Point(248, 334);
+            this.texName.Name = "texName";
+            this.texName.Size = new System.Drawing.Size(251, 34);
+            this.texName.TabIndex = 2;
             // 
-            // textBox4
+            // texLaName
             // 
-            this.textBox4.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox4.Location = new System.Drawing.Point(248, 415);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(251, 34);
-            this.textBox4.TabIndex = 4;
+            this.texLaName.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texLaName.Location = new System.Drawing.Point(248, 415);
+            this.texLaName.Name = "texLaName";
+            this.texLaName.Size = new System.Drawing.Size(251, 34);
+            this.texLaName.TabIndex = 3;
             // 
-            // textBox5
+            // texAddr
             // 
-            this.textBox5.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox5.Location = new System.Drawing.Point(248, 509);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(251, 34);
-            this.textBox5.TabIndex = 4;
+            this.texAddr.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texAddr.Location = new System.Drawing.Point(248, 509);
+            this.texAddr.Name = "texAddr";
+            this.texAddr.Size = new System.Drawing.Size(251, 34);
+            this.texAddr.TabIndex = 4;
             // 
-            // textBox8
+            // texOccupation
             // 
-            this.textBox8.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox8.Location = new System.Drawing.Point(685, 441);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(251, 34);
-            this.textBox8.TabIndex = 4;
+            this.texOccupation.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texOccupation.Location = new System.Drawing.Point(685, 441);
+            this.texOccupation.Name = "texOccupation";
+            this.texOccupation.Size = new System.Drawing.Size(251, 34);
+            this.texOccupation.TabIndex = 6;
             // 
-            // textBox9
+            // texPhone
             // 
-            this.textBox9.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox9.Location = new System.Drawing.Point(248, 604);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(251, 34);
-            this.textBox9.TabIndex = 4;
+            this.texPhone.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texPhone.Location = new System.Drawing.Point(248, 604);
+            this.texPhone.Name = "texPhone";
+            this.texPhone.Size = new System.Drawing.Size(251, 34);
+            this.texPhone.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // DobDate
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("微软雅黑", 13F);
-            this.dateTimePicker1.Font = new System.Drawing.Font("微软雅黑", 13F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(685, 604);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(251, 30);
-            this.dateTimePicker1.TabIndex = 5;
+            this.DobDate.CalendarFont = new System.Drawing.Font("微软雅黑", 13F);
+            this.DobDate.Font = new System.Drawing.Font("微软雅黑", 13F);
+            this.DobDate.Location = new System.Drawing.Point(685, 604);
+            this.DobDate.Name = "DobDate";
+            this.DobDate.Size = new System.Drawing.Size(251, 30);
+            this.DobDate.TabIndex = 8;
             // 
             // btnSubmit
             // 
             this.btnSubmit.AutoRoundedCorners = true;
             this.btnSubmit.BorderColor = System.Drawing.Color.Transparent;
             this.btnSubmit.BorderRadius = 21;
+            this.btnSubmit.BorderThickness = 3;
             this.btnSubmit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSubmit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSubmit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -423,11 +424,13 @@
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
             this.btnSubmit.HoverState.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.btnSubmit.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnSubmit.HoverState.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnSubmit.Location = new System.Drawing.Point(421, 707);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(210, 45);
-            this.btnSubmit.TabIndex = 6;
+            this.btnSubmit.TabIndex = 9;
             this.btnSubmit.Text = "提交 Submit";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // guna2Panel2
             // 
@@ -438,53 +441,54 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1045, 19);
             this.guna2Panel2.TabIndex = 7;
             // 
-            // label23
+            // labLogout
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.label23.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label23.Location = new System.Drawing.Point(461, 763);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(126, 27);
-            this.label23.TabIndex = 8;
-            this.label23.Text = "退出 Logout";
+            this.labLogout.AutoSize = true;
+            this.labLogout.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.labLogout.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.labLogout.Location = new System.Drawing.Point(461, 763);
+            this.labLogout.Name = "labLogout";
+            this.labLogout.Size = new System.Drawing.Size(126, 27);
+            this.labLogout.TabIndex = 10;
+            this.labLogout.Text = "退出 Logout";
+            this.labLogout.Click += new System.EventHandler(this.labLogout_Click);
             // 
-            // guna2ComboBox1
+            // cbEducation
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.cbEducation.BackColor = System.Drawing.Color.Transparent;
+            this.cbEducation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbEducation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEducation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbEducation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbEducation.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.cbEducation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbEducation.ItemHeight = 30;
+            this.cbEducation.Items.AddRange(new object[] {
             "非本科生<Non Graduate>",
             "本科生<Under Graduate>",
             "研究生<Post Graduate>"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(685, 525);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(251, 36);
-            this.guna2ComboBox1.TabIndex = 9;
+            this.cbEducation.Location = new System.Drawing.Point(685, 525);
+            this.cbEducation.Name = "cbEducation";
+            this.cbEducation.Size = new System.Drawing.Size(251, 36);
+            this.cbEducation.TabIndex = 7;
             // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 821);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.label23);
+            this.Controls.Add(this.cbEducation);
+            this.Controls.Add(this.labLogout);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DobDate);
+            this.Controls.Add(this.texOccupation);
+            this.Controls.Add(this.texPhone);
+            this.Controls.Add(this.texAddr);
+            this.Controls.Add(this.texLaName);
+            this.Controls.Add(this.texName);
+            this.Controls.Add(this.texPin);
+            this.Controls.Add(this.texAccountNum);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -548,17 +552,17 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox texAccountNum;
+        private System.Windows.Forms.TextBox texPin;
+        private System.Windows.Forms.TextBox texName;
+        private System.Windows.Forms.TextBox texLaName;
+        private System.Windows.Forms.TextBox texAddr;
+        private System.Windows.Forms.TextBox texOccupation;
+        private System.Windows.Forms.TextBox texPhone;
+        private System.Windows.Forms.DateTimePicker DobDate;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private System.Windows.Forms.Label label23;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private System.Windows.Forms.Label labLogout;
+        private Guna.UI2.WinForms.Guna2ComboBox cbEducation;
     }
 }
