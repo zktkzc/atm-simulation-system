@@ -33,15 +33,16 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
+            this.btnWithdraw = new Guna.UI2.WinForms.Guna2Button();
+            this.texAccount = new System.Windows.Forms.TextBox();
+            this.labBack = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.labBalance = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,44 +99,50 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "ATM 模拟系统";
             // 
-            // btnSubmit
+            // btnWithdraw
             // 
-            this.btnSubmit.AutoRoundedCorners = true;
-            this.btnSubmit.BorderColor = System.Drawing.Color.Transparent;
-            this.btnSubmit.BorderRadius = 21;
-            this.btnSubmit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSubmit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSubmit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSubmit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSubmit.FillColor = System.Drawing.Color.DarkSlateGray;
-            this.btnSubmit.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.HoverState.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.btnSubmit.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btnSubmit.Location = new System.Drawing.Point(231, 432);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(298, 45);
-            this.btnSubmit.TabIndex = 30;
-            this.btnSubmit.Text = "取款 Withdraw";
+            this.btnWithdraw.AutoRoundedCorners = true;
+            this.btnWithdraw.BorderColor = System.Drawing.Color.Transparent;
+            this.btnWithdraw.BorderRadius = 21;
+            this.btnWithdraw.BorderThickness = 3;
+            this.btnWithdraw.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWithdraw.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnWithdraw.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnWithdraw.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnWithdraw.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnWithdraw.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.btnWithdraw.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.btnWithdraw.ForeColor = System.Drawing.Color.White;
+            this.btnWithdraw.HoverState.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.btnWithdraw.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnWithdraw.HoverState.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.btnWithdraw.Location = new System.Drawing.Point(231, 432);
+            this.btnWithdraw.Name = "btnWithdraw";
+            this.btnWithdraw.Size = new System.Drawing.Size(298, 45);
+            this.btnWithdraw.TabIndex = 30;
+            this.btnWithdraw.Text = "取款 Withdraw";
+            this.btnWithdraw.Click += new System.EventHandler(this.btnWithdraw_Click);
             // 
-            // textBox1
+            // texAccount
             // 
-            this.textBox1.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.textBox1.Location = new System.Drawing.Point(233, 333);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 34);
-            this.textBox1.TabIndex = 29;
+            this.texAccount.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.texAccount.Location = new System.Drawing.Point(233, 333);
+            this.texAccount.Name = "texAccount";
+            this.texAccount.Size = new System.Drawing.Size(296, 34);
+            this.texAccount.TabIndex = 29;
             // 
-            // label23
+            // labBack
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.label23.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label23.Location = new System.Drawing.Point(312, 501);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(126, 27);
-            this.label23.TabIndex = 28;
-            this.label23.Text = "退出 Logout";
+            this.labBack.AutoSize = true;
+            this.labBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labBack.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.labBack.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.labBack.Location = new System.Drawing.Point(323, 501);
+            this.labBack.Name = "labBack";
+            this.labBack.Size = new System.Drawing.Size(103, 27);
+            this.labBack.TabIndex = 28;
+            this.labBack.Text = "返回 Back";
+            this.labBack.Click += new System.EventHandler(this.labBack_Click);
             // 
             // label5
             // 
@@ -203,17 +210,29 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "Available Balance";
             // 
+            // labBalance
+            // 
+            this.labBalance.AutoSize = true;
+            this.labBalance.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.labBalance.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.labBalance.Location = new System.Drawing.Point(353, 236);
+            this.labBalance.Name = "labBalance";
+            this.labBalance.Size = new System.Drawing.Size(85, 27);
+            this.labBalance.TabIndex = 26;
+            this.labBalance.Text = "Balance";
+            // 
             // Withdraw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(718, 577);
-            this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label23);
+            this.Controls.Add(this.btnWithdraw);
+            this.Controls.Add(this.texAccount);
+            this.Controls.Add(this.labBack);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label13);
+            this.Controls.Add(this.labBalance);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -221,10 +240,11 @@
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Withdraw";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Withdraw";
+            this.Load += new System.EventHandler(this.Withdraw_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -239,14 +259,15 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnSubmit;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label23;
+        private Guna.UI2.WinForms.Guna2Button btnWithdraw;
+        private System.Windows.Forms.TextBox texAccount;
+        private System.Windows.Forms.Label labBack;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labBalance;
     }
 }
